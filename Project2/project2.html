@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Our Club</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+    }
+
+    img {
+      height: 300px;
+      width: auto;
+      margin-left: 900px;
+      margin-top: -600px;
+    }
+
+    h4 {
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+
+    .h4 {
+      margin-top: 20px;
+      margin-bottom: 5px;
+    }
+
+    p {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .inputname,
+    .inputsurname,
+    .inputbirth,
+    .inputadress,
+    .input {
+      margin: 10px 0;
+      width: 300px;
+      padding: 6px;
+    }
+
+    .button {
+      color: white;
+      background-color: rgb(138, 224, 10);
+      border-radius: 10px;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    .container {
+      width: 80%;
+      max-width: 600px;
+      text-align: left;
+    }
+
+    .profession,
+    .study {
+      margin: 8px 0;
+    }
+
+    label {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h4 class="h4">Join Our Club 🩷 </h4>
+    <p>Register today for a free membership.</p>
+
+    <form id="registrationForm">
+      <input type="text" placeholder="Name" class="inputname" required>
+      <input type="text" placeholder="Lastname" class="inputsurname" required>
+
+      <h4>Date of birth</h4>
+      <input type="date" class="inputbirth" required>
+
+      <h4>Address</h4>
+      <input type="text" placeholder="Enter your address" class="inputadress" required>
+      <br>
+      <label for="country"><b>Country</b></label>
+      <br>
+      <select id="country" name="country" class="input" required>
+        <option value="">Select your country</option>
+        <option value="United States" class="country">United States</option>
+        <option value="Canada" class="country">Canada</option>
+        <option value="United Kingdom" class="country">United Kingdom</option>
+      </select>
+
+      <div class="study">
+        <label>What kind of study do you want to do?</label>
+        <br>
+        <input type="radio" name="profession" value="Computer Science" required class="study"> Computer Science<br>
+        <input type="radio" name="profession" value="Accounting" required class="study"> Accounting<br>
+        <input type="radio" name="profession" value="Journalism" required class="study"> Journalism<br>
+        <input type="radio" name="profession" value="Lawyer" required class="study"> Lawyer<br>
+      </div>
+
+      <div class="profession">
+        <label>Which section of the library would you like to access?</label>
+        <br>
+        <input type="radio" name="study" value="Literature" required class="profession"> Literature<br>
+        <input type="radio" name="study" value="English" required class="profession"> English<br>
+        <input type="radio" name="study" value="German" required class="profession"> German<br>
+        <input type="radio" name="study" value="History" required class="profession"> History<br>
+        <input type="radio" name="study" value="Mathematics" required class="profession"> Mathematics<br>
+        <input type="radio" name="study" value="Physics" required class="profession"> Physics<br>
+        <input type="radio" name="study" value="All" required class="profession"> All<br>
+      </div>
+
+      <button type="submit" class="button">Submit</button>
+    </form>
+  </div>
+
+  <img src="school.jpg" alt="School">
+  <script src="js.js"></script>
+</body>
+
+</html>
